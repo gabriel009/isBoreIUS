@@ -3,18 +3,17 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: 'Manrope', sans-serif;
-  background: #F4F9F4;
+  background: linear-gradient(240.64deg, #FDFBFB 0%, #EBEDEE 100%);
 }
 
 .main-text {
   font-size: 48px;
-  color: #A7D7C5;
   margin: 36px 0;
+	background: linear-gradient(to right, #F093FB 0%, #F5576C 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
-.main-text-bold{
-  color: #74B49B;
-}
 
 .container-box{
   display: flex;
@@ -40,7 +39,7 @@ body {
 
 .rangeStyle::-webkit-slider-thumb{
   -webkit-appearance: none;
-  background-color: #74B49B;
+  background-color: #F175B3;;
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -50,7 +49,7 @@ body {
   width: 468px;
   height: 468px;
   margin: 20px auto;
-  background: linear-gradient(141.6deg, #A7D7C5 8.34%, #5C8D89 82.78%);
+  background: linear-gradient(135deg, #F093FB 0%, #F5576C 100%);
 }
 
 .container-options{
@@ -76,7 +75,7 @@ body {
 }
 
 .button-clipboard{
-  background: #F2F2F2;
+  background: #FDFBFB;
   padding: 0 20px;
   cursor: pointer;
   border-radius: 0 8px 8px 0;
@@ -91,11 +90,11 @@ body {
 }
 
 .author span{
-  color: #A7D7C5;
+  color: #F275B3;
 }
 
 .author span a{
-  color: #74B49B;
+  color: #F275B3;
   text-decoration: none;
   font-weight: 700;
 }
