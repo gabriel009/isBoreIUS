@@ -46,7 +46,6 @@ body {
   border-radius: 50%;
 }
 
-
 #main-box{
   width: 468px;
   height: 468px;
@@ -54,17 +53,11 @@ body {
   background: linear-gradient(141.6deg, #A7D7C5 8.34%, #5C8D89 82.78%);
 }
 
-@media only screen and (max-width: 600px){
-  #main-box{
-    width: 375px;
-    height: 375px;
-}
-
 .container-options{
   display: flex;
   flex-direction: row;
   width: 264px;
-  margin: 36px auto;
+  margin: 32px auto;
   justify-content: space-between;
 }
 
@@ -76,7 +69,7 @@ body {
 .box-code {
   text-align: center;
   background: #fff;
-  padding: 20px 36px;
+  padding: 16px 36px;
   color: #365351;
   box-shadow: 0px 4px 20px rgba(167, 215, 197, 0.1);
   border-radius: 8px 0 0 8px;
@@ -91,7 +84,7 @@ body {
 
 .author{
   display: flex;
-  margin-top: 68px;
+  margin-top: 48px;
   border-radius: 20px;
   justify-content: center;
   align-items: center;
@@ -110,4 +103,11 @@ body {
 textarea{
   position: absolute;
   left: -100%;
+}
+
+@media (max-width: 600px){
+  #main-box{
+    width: 300px;
+    height: 300px;
+  }
 }
