@@ -44,15 +44,20 @@ body {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-
 }
 
 
 #main-box{
   width: 468px;
   height: 468px;
-  margin: 20px 0;
+  margin: 20px auto;
   background: linear-gradient(141.6deg, #A7D7C5 8.34%, #5C8D89 82.78%);
+}
+
+@media only screen and (max-width: 600px){
+  #main-box{
+    width: 375px;
+    height: 375px;
 }
 
 .container-options{
