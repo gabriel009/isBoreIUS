@@ -14,19 +14,20 @@
     is<b class="main-text-bold">BoredIus</b>
   </h1>
   <section>
-    <div class="container-box" onchange="borderRadius()">
-      <div class="input-number">
-        <input type="number" name="topLeft" id="top-left" class="handle-number" min="0" max="1000" placeholder="px">
-        <input type="number" name="bottomLeft" id="bottom-left" class="handle-number" min="0" max="1000" placeholder="px">
-      </div> 
+    <div class="container-box" oninput="refreshValue()">
+
+      <div class="rangeContainerStyle">
+      <input type="range" class="rangeStyle" id="rangeTopLeft" min="0" max="100" value="0" oninput="rangeValue('topLeft')">
+        <input type="range" class="rangeStyle rightRange" id="rangeTopRight" min="0" max="100" value="0" oninput="rangeValue('topRight')">
+      </div>
 
       <div id="main-box"></div>
-    
-      <div class="input-number">
-        <input type="number" name="topRight" id="top-right" class="handle-number" min="0" max="1000" placeholder="px">
-        <input type="number" name="bottomRight" id="bottom-right" class="handle-number" min="0" max="1000" placeholder="px">
+
+      <div class="rangeContainerStyle">
+        <input type="range" class="rangeStyle" id="rangeBottomLeft" min="0" max="100" value="0" oninput="rangeValue('bottomLeft')">
+        <input type="range" class="rangeStyle rightRange" id="rangeBottomRight" min="0" max="100" value="0" oninput="rangeValue('bottomRight')">
       </div>
-      
+
     </div>
 
     <div class="container-options"> 
@@ -60,7 +61,7 @@
 
     <div class="container-code">
       <div class="box-code">
-        <code id="code-copy">border-radius: 0;</code>
+        <code id="code-border">border-radius: 0% 0% 0% 0%;</code>
       </div>
       <button class="button-clipboard" onclick="copyClipboard()">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#365351" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clipboard">

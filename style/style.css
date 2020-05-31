@@ -18,32 +18,40 @@ body {
 
 .container-box{
   display: flex;
-  flex-direction: row;
-}
-
-.handle-number{
-  height: 42px;
-  width: 56px;
-  background: #fff;
-  border-radius: 8px;
-  color: #5C8D89;
-  font-size: 14px;
-  font-family: 'Manrope', sans-serif;
-  font-weight: 700;  
-  text-align: center;
-}
-
-.input-number{
-  display: flex;
   flex-direction: column;
-  height: 468px;
+}
+
+.rangeContainerStyle{
+  display: flex;
   justify-content: space-between;
 }
+
+.rangeStyle{
+  height: 6px;
+  appearance: none;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0px 4px 20px rgba(167, 215, 197, 0.1);
+}
+
+.rightRange{
+  transform: rotate(180deg);
+}
+
+.rangeStyle::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background-color: #74B49B;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+
+}
+
 
 #main-box{
   width: 468px;
   height: 468px;
-  margin: 0 20px;
+  margin: 20px 0;
   background: linear-gradient(141.6deg, #A7D7C5 8.34%, #5C8D89 82.78%);
 }
 
@@ -65,12 +73,15 @@ body {
   background: #fff;
   padding: 20px 36px;
   color: #365351;
+  box-shadow: 0px 4px 20px rgba(167, 215, 197, 0.1);
+  border-radius: 8px 0 0 8px;
 }
 
 .button-clipboard{
   background: #F2F2F2;
   padding: 0 20px;
   cursor: pointer;
+  border-radius: 0 8px 8px 0;
 }
 
 .author{
